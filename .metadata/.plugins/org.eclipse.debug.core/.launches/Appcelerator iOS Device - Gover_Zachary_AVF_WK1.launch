@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.installer.launchConfigurationType">
+<booleanAttribute key="ATTR_MINIFY" value="true"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="Gover_Zachary_AVF_WK1"/>
+<stringAttribute key="ATTR_TITANIUM_DEPLOY_TYPE" value="development"/>
+<booleanAttribute key="ATTR_UPLOAD_DEBUG_SYMBOLS" value="false"/>
+<stringAttribute key="appid" value="com.zacharygover.wk1"/>
+<stringAttribute key="certificate" value="Jennifer McCarrick (5TMP78RMGA)"/>
+<stringAttribute key="debug_config" value="::1441471857476:192.168.0.3"/>
+<stringAttribute key="debug_hosts" value="192.168.0.3"/>
+<stringAttribute key="device_id" value="16e32f2512127230e5525d1acf0e1ee4a06f0bf1"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Gover_Zachary_AVF_WK1"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.capture_output" value="true"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
+<stringAttribute key="sdk_version" value="8.4"/>
+<stringAttribute key="uuid" value="cc03c378-3f35-4670-8261-72b5dce48222"/>
+</launchConfiguration>

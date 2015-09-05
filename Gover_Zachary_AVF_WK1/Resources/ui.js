@@ -1,0 +1,27 @@
+// Define all design elements to be displayed within the application
+
+var mainWin = Ti.UI.createWindow ({
+	background: "#333333",
+	layout: "vertical"
+});
+
+var tempView = Ti.UI.createView ({
+	left: 0, right: 0,
+	background: "#ededed",
+	top: 20
+});
+
+var tempText = Ti.UI.createLabel ({
+	text: "?",
+	top: 10,
+	color: "#FFFFFF",
+	font: {fontSize: 24, fontFamily: "Arial"}
+});
+tempView.add(tempText);
+
+var updateView = function(response) {
+	tempText.text = response.temp;
+};
+
+mainWin.add(tempView);
+mainWin.open();

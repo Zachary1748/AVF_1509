@@ -1,0 +1,41 @@
+// Define the database connection; connect, read and save
+
+var getGeo = function() {
+	Ti.Geolocation.getCurrentPosition(function(e) {
+		console.log(e);
+		// console.log(JSON.stringify(e.source));
+		var lat = e.coords.latitude;
+		console.log(lat);
+		// var lng = e.coords.longitude;
+		// apiConnection(lat, lng);
+	});
+};
+
+var apiConnection = function (lat, lng) {
+	Ti.API.info("apiConnection");
+	var url = "http://api.wunderground.com/api/1ca3f32c8865e443/geolookup/conditions/alerts/forecast/hourly/q/" + lat + "," + lng + ".json";
+	var xhrRequest = Ti.Network.createHTTPClient ({
+		onload : function(e) {
+			console.log(e);
+			var json = JSON.parse(this.reponseText);
+			console.log(json);
+		},
+		onerror : function(e) {
+			console.log(e);
+		},
+		timeout : 5000
+	});
+	
+	xhrRequest.open();
+	xhrRequest.send();
+};
+
+var read = function() {
+	
+};
+
+var save = function () {
+	
+};
+
+exports.getGeo = getGeo;

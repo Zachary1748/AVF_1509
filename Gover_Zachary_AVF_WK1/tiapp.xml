@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>Zachary</publisher>
     <url>http://</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2015 by Zachary</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -16,10 +16,10 @@
     <ios>
         <plist>
             <dict>
-            	<key>NSLocationAlwaysUsageDescription</key> 
-				<array>
-				     <string>Please allow the app to access your Location to find the weather status near you.</string>
-				</array>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <array>
+                    <string>Please allow the app to access your Location to find the weather status near you.</string>
+                </array>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>

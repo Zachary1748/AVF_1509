@@ -1,0 +1,1 @@
+var data=require("db");Ti.Network.online?data.getGeo():(alert("Please connect to the internet."),data.read());

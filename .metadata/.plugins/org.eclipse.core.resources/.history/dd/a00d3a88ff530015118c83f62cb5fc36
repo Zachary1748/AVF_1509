@@ -1,0 +1,13 @@
+// Define the database connection; connect, read and save
+
+var apiConnection = function () {
+	
+};
+
+var read = function() {
+	
+};
+
+var save = function () {
+	
+};

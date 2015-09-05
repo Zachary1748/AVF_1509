@@ -556,3 +556,2140 @@ java.lang.InterruptedException
 !MESSAGE Errors occurred while refreshing git index
 !SUBENTRY 1 com.aptana.core 4 128 2015-09-05 11:48:12.448
 !MESSAGE fatal: bad revision 'HEAD'
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 11:51:14.915
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 11:51:14.915
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 11:51:14.916
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 11:51:14.916
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 12:13:53.807
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 12:13:59.345
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 12:18:40.482
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 13:58:48.949
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 13:58:48.950
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 13:58:48.952
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 13:58:48.953
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 14:01:05.586
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:06:34.944
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:06:34.945
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:06:34.945
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:06:34.946
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:11:08.131
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:11:08.131
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:11:08.132
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:11:08.132
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:13:32.566
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:13:32.566
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:13:32.566
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:13:32.567
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:13:40.576
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:13:40.576
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:13:40.576
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:13:40.577
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:14:12.798
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:14:12.798
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:14:12.799
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:14:12.799
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:14:20.690
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:14:20.691
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:14:20.691
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:14:20.692
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:16:37.278
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:16:37.278
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:16:37.279
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:16:37.280
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SESSION 2015-09-05 14:41:53.137 -----------------------------------------------
+eclipse.buildId=4.1.1.201507141126
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Zachary/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Zachary/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-05 14:42:27.171
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/mobilesdk/osx
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-05 14:42:27.272
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2015-09-05 14:42:31.578
+!MESSAGE (Build 4.1.1.201507141126) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK windows
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:42:31.581
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Ti SDK 4.1 Example App
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:42:31.587
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Employee Directory
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:42:31.589
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Movies
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:42:31.591
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Geocoder
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:42:31.594
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Rss Reader
+!SESSION 2015-09-05 14:49:32.848 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Zachary/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Zachary/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-09-05 14:49:34.739
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-05 14:49:43.228
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/mobilesdk/osx
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-05 14:49:43.234
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2015-09-05 14:49:51.230
+!MESSAGE (Build 4.1.1.201507141126) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK windows
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:49:51.234
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Ti SDK 4.1 Example App
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:49:51.237
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Employee Directory
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:49:51.239
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Movies
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:49:51.240
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Geocoder
+
+!ENTRY com.aptana.samples 4 0 2015-09-05 14:49:51.242
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Unable to retrieve the icon at null for sample Rss Reader
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 14:54:58.739
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:54:58.739
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:54:58.740
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 14:54:58.741
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:31:35.117
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:31:35.118
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:31:35.118
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:31:35.119
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:31:43.166
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:31:43.167
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:31:43.167
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:31:43.168
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:33:19.637
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:33:19.637
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:33:19.638
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:33:19.639
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:34:55.818
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:34:55.818
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:34:55.818
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:34:55.819
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:56:36.704
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:56:36.704
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:56:36.705
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:56:36.706
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:59:17.154
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:59:17.155
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:59:17.155
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:59:17.156
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 15:59:25.045
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:59:25.045
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:59:25.046
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 15:59:25.046
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 16:02:05.632
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:02:05.632
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:02:05.632
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:02:05.633
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 16:04:22.054
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:04:22.054
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:04:22.054
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:04:22.055
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 16:31:51.380
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 16:35:19.621
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 16:37:41.268
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.js.core 4 0 2015-09-05 16:39:26.272
+!MESSAGE (Build 4.1.1.201507141126) [ERROR]  Source type cannot be null or empty
+!STACK 0
+java.lang.IllegalArgumentException: Source type cannot be null or empty
+	at com.appcelerator.titanium.alloy.core.js.inferencing.AlloyJSAliasResolver.resolve(AlloyJSAliasResolver.java:26)
+	at com.aptana.js.internal.core.inferencing.AliasResolverFactory.resolve(AliasResolverFactory.java:100)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:704)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:606)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:359)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:420)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:289)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:285)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:232)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:105)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 16:45:26.907
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:45:26.907
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:45:26.907
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:45:26.908
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 16:49:43.590
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:49:43.590
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:49:43.591
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:49:43.591
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-09-05 16:51:35.754
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:51:35.754
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:51:35.755
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-09-05 16:51:35.756
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/Zachary/Documents/Full Sail/ADV/GIT"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:363)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1588)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1546)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1541)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
