@@ -1,6 +1,6 @@
 =run
 Gover_Zachary_AVF_WK1\:launchMode=run
-Gover_Zachary_AVF_WK1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.16e32f2512127230e5525d1acf0e1ee4a06f0bf1
+Gover_Zachary_AVF_WK1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.48704905-C1ED-46C8-B55F-8E679207A63F
 LAST_LAUNCH_TIMESTAMP=1441482582668
 eclipse.preferences.version=1
 preference.show.console.onError=false

@@ -7,7 +7,7 @@ var mainWin = Ti.UI.createWindow ({
 	layout: "vertical"
 });
 
-if (Ti.Platform.osname != "android") {
+if (!Ti.Platform.osname === "android") {
 	var statusBar = Ti.UI.createView({
 		height: 20, left: 0, right: 0, top: 0,
 		backgroundColor: "#ededed"
@@ -51,7 +51,7 @@ tempView.add(tempText);
 
 var locationText = Ti.UI.createLabel ({
 	text: "?, ?",
-	top: "#5c5c5c",
+	top: 5, color: "#5c5c5c",
 	font: {fontSize: 16, fontFamily: fntFmly}
 });
 tempView.add(locationText);
@@ -62,6 +62,7 @@ var updateView = function(response) {
 	wthrImg.image = response.wthrImg;
 	tempText.text = response.temp + "°";
 	locationText.text = response.city + ", " + response.state;
+	console.log(response.city + ", " + response.state);
 	if (response.desc == "" || response.desc == "\"<null>\"" || response.desc == null) {
 		alertView.height = 0;
 	} else {
@@ -90,6 +91,9 @@ refreshImg.addEventListener('click', function(){
 
 if (!Ti.Platform.osname === "android") {
 	mainWin.add(statusBar);
+}
+if (Ti.Platform.osname === "android") {
+	alertView.top = 0;
 }
 mainWin.add(alertView);
 mainWin.add(tempView);
