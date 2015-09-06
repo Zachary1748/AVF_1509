@@ -3,6 +3,7 @@
 var send = function(response) {
 	// Send all of the saved data into the users view
 	var ui = require("ui");
+	console.log(response);
 	ui.updateView(response);
 };
 
@@ -14,16 +15,20 @@ var apiConnection = function (lat, lng) {
 		onload : function(e) {
 			var json = JSON.parse(this.responseText);
 			var response = {
-				ctry : json.location.country,
-				state : json.location.state,
-				city : json.location.city,
-				zip : json.location.zip,
-				wthrImg : json.current_observation.icon_url,
-				wthr : json.current_observation.weather,
-				temp : Math.round(json.current_observation.temp_f)
+				// Weather data
+				ctry	: json.location.country,
+				state	: json.location.state,
+				city	: json.location.city,
+				zip		: json.location.zip,
+				wthrImg	: json.current_observation.icon_url,
+				wthr	: json.current_observation.weather,
+				temp	: Math.round(json.current_observation.temp_f),
+				// Alerts
+				desc	: json.alerts[0].description,
+				msg		: json.alerts[0].message
 			};
 			save(response);
-			send(response);
+			read();
 		},
 		onerror : function(e) {
 			console.log(e);
@@ -57,14 +62,18 @@ var read = function() {
 	
 	while (dbResult.isValidRow()) {
 		var response = {
-			id : dbResult.fieldByName("id"),
-			ctry : dbResult.fieldByName("ctry"),
-			state : dbResult.fieldByName("state"),
-			city : dbResult.fieldByName("city"),
-			zip : dbResult.fieldByName("zip"),
-			wthrImg : dbResult.fieldByName("wthrImg"),
-			wthr : dbResult.fieldByName("wthr"),
-			temp : dbResult.fieldByName("temp")
+			// Weather data
+			id		: dbResult.fieldByName("id"),
+			ctry	: dbResult.fieldByName("ctry"),
+			state	: dbResult.fieldByName("state"),
+			city	: dbResult.fieldByName("city"),
+			zip		: dbResult.fieldByName("zip"),
+			wthrImg	: dbResult.fieldByName("wthrImg"),
+			wthr	: dbResult.fieldByName("wthr"),
+			temp	: Math.round(dbResult.fieldByName("temp")),
+			// Alerts
+			desc	: dbResult.fieldByName("desc"),
+			msg		: dbResult.fieldByName("msg")
 		};
 		dbResult.next();
 	}
@@ -77,9 +86,10 @@ var read = function() {
 var save = function(arg) {
 	// Save the new data that has been fetched into the the Database
 	var db = Ti.Database.open("weather_db");
-	db.execute("CREATE TABLE IF NOT EXISTS weather_data (id INTEGER PRIMARY KEY, ctry TEXT, state TEXT, city TEXT, zip INTEGER, wthrImg TEXT, wthr TEXT, temp TEXT)");
+	db.execute("DROP TABLE IF EXISTS weather_data");
+	db.execute("CREATE TABLE IF NOT EXISTS weather_data (id INTEGER PRIMARY KEY, ctry TEXT, state TEXT, city TEXT, zip INTEGER, wthrImg TEXT, wthr TEXT, temp INTEGER, desc TEXT, msg TEXT)");
 	db.execute("DELETE FROM weather_data");
-	db.execute("INSERT INTO weather_data (ctry, state, city, zip, wthrImg, wthr, temp) VALUES (?, ?, ?, ?, ?, ?, ?)", arg.ctry, arg.state, arg.city, arg.zip, arg.wthrImg, arg.wthr, arg.temp);
+	db.execute("INSERT INTO weather_data (ctry, state, city, zip, wthrImg, wthr, temp, desc, msg) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", arg.ctry, arg.state, arg.city, arg.zip, arg.wthrImg, arg.wthr, arg.temp, arg.desc, arg.msg);
 	db.close();
 };
 

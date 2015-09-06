@@ -1,0 +1,64 @@
+// Define all design elements to be displayed within the application
+var fntFmly = "Arial";
+
+var mainWin = Ti.UI.createWindow ({
+	backgroundColor: "#ededed",
+	layout: "vertical"
+});
+
+
+var tempView = Ti.UI.createView ({
+	left: 0, right: 0,
+	backgroundColor: "#565656",
+	top: 20,
+	layout: "vertical"
+});
+
+var wthrImg = Ti.UI.createImageView ({
+	image: "?",
+	height: 50, top: 10
+});
+tempView.add(wthrImg);
+
+var refreshImg = Ti.UI.createImageView ({
+	image: "images/refresh.png",
+	height: 25, bottom: 5, right: 5
+});
+tempView.add(wthrImg);
+
+var tempText = Ti.UI.createLabel ({
+	text: "?",
+	top: 10,
+	color: "#fefefe",
+	font: {fontSize: 46, fontFamily: fntFmly}
+});
+tempView.add(tempText);
+
+var locationText = Ti.UI.createLabel ({
+	text: "?, ?",
+	top: 5,
+	color: "#e5e5e5",
+	font: {fontSize: 16, fontFamily: fntFmly}
+});
+tempView.add(locationText);
+
+var updateView = function(response) {
+	wthrImg.image = response.wthrImg;
+	tempText.text = response.temp + "°";
+	locationText.text = response.city + ", " + response.state;
+};
+
+refreshImg.addEventListener('click', function(){
+	if (Ti.Network.online) {
+		// Connect to the API and send results to the Ui and DB
+		var data = require("db");
+		data.getGeo();
+	} else {
+		// Connect to the DB if the user has been opened the application before with internet
+		alert("Please connect to the internet.");
+	}
+});
+
+mainWin.add(tempView);
+mainWin.open();
+exports.updateView = updateView;
