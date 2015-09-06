@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.installer.launchConfigurationType">
-<booleanAttribute key="ATTR_MINIFY" value="true"/>
+<booleanAttribute key="ATTR_MINIFY" value="false"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="Gover_Zachary_AVF_WK1"/>
 <stringAttribute key="ATTR_TITANIUM_DEPLOY_TYPE" value="development"/>
 <booleanAttribute key="ATTR_UPLOAD_DEBUG_SYMBOLS" value="false"/>
@@ -15,8 +15,6 @@
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
 </listAttribute>
-<booleanAttribute key="org.eclipse.debug.core.capture_output" value="true"/>
-<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
 <stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
 <stringAttribute key="sdk_version" value="8.4"/>
 <stringAttribute key="uuid" value="cc03c378-3f35-4670-8261-72b5dce48222"/>

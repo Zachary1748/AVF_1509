@@ -14,18 +14,22 @@ var apiConnection = function (lat, lng) {
 	var xhrRequest = Ti.Network.createHTTPClient ({
 		onload : function(e) {
 			var json = JSON.parse(this.responseText);
+			for (i=0; i < json.alerts.length; i++) {
+				var alertDesc = json.alerts[i].description;
+				var alertMsg = json.alerts[i].message;
+			}
 			var response = {
 				// Weather data
-				ctry	: json.location.country,
-				state	: json.location.state,
-				city	: json.location.city,
-				zip		: json.location.zip,
-				wthrImg	: json.current_observation.icon_url,
-				wthr	: json.current_observation.weather,
-				temp	: Math.round(json.current_observation.temp_f),
+				"ctry"		: json.location.country,
+				"state"		: json.location.state,
+				"city"		: json.location.city,
+				"zip"		: json.location.zip,
+				"wthrImg"	: json.current_observation.icon_url,
+				"wthr"		: json.current_observation.weather,
+				"temp"		: Math.round(json.current_observation.temp_f),
 				// Alerts
-				desc	: json.alerts[0].description,
-				msg		: json.alerts[0].message
+				"desc"		: alertDesc,
+				"msg"		: alertMsg
 			};
 			save(response);
 			read();
@@ -43,16 +47,23 @@ var apiConnection = function (lat, lng) {
 
 var getGeo = function() {
 	// Retreive the users current location
-	Ti.Geolocation.getCurrentPosition(function(e) {
-		if (!e.success || e.error) {
-			console.log(e.error);
-			alert("Sorry there was an error getting your current location.");
-		} else {
-			var lat = e.coords.latitude;
-			var lng = e.coords.longitude;
-			apiConnection(lat, lng);
-		}
-	});
+	if (Ti.Platform.osname === "android") {
+		var lat = 37.776289;
+		var lng = -122.395234;
+		apiConnection(lat, lng);
+	} else {
+		Ti.Geolocation.getCurrentPosition(function(e) {
+			if (!e.success || e.error) {
+				console.log(e.error);
+				alert("Sorry there was an error getting your current location.");
+				read();
+			} else {
+				var lat = e.coords.latitude;
+				var lng = e.coords.longitude;
+				apiConnection(lat, lng);
+			}
+		});
+	}
 };
 
 var read = function() {
@@ -63,17 +74,17 @@ var read = function() {
 	while (dbResult.isValidRow()) {
 		var response = {
 			// Weather data
-			id		: dbResult.fieldByName("id"),
-			ctry	: dbResult.fieldByName("ctry"),
-			state	: dbResult.fieldByName("state"),
-			city	: dbResult.fieldByName("city"),
-			zip		: dbResult.fieldByName("zip"),
-			wthrImg	: dbResult.fieldByName("wthrImg"),
-			wthr	: dbResult.fieldByName("wthr"),
-			temp	: Math.round(dbResult.fieldByName("temp")),
+			"id"		: dbResult.fieldByName("id"),
+			"ctry"		: dbResult.fieldByName("ctry"),
+			"state"		: dbResult.fieldByName("state"),
+			"city"		: dbResult.fieldByName("city"),
+			"zip"		: dbResult.fieldByName("zip"),
+			"wthrImg"	: dbResult.fieldByName("wthrImg"),
+			"wthr"		: dbResult.fieldByName("wthr"),
+			"temp"		: Math.round(dbResult.fieldByName("temp")),
 			// Alerts
-			desc	: dbResult.fieldByName("desc"),
-			msg		: dbResult.fieldByName("msg")
+			"desc"		: dbResult.fieldByName("desc"),
+			"msg"		: dbResult.fieldByName("msg")
 		};
 		dbResult.next();
 	}

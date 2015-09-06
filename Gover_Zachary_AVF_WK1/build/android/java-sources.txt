@@ -1,0 +1,7 @@
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/com/zacharygover/wk1/ApplicationStylesheet.java"
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/com/zacharygover/wk1/Gover_zachary_avf_wk1Activity.java"
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/com/zacharygover/wk1/Gover_zachary_avf_wk1AppInfo.java"
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/com/zacharygover/wk1/Gover_zachary_avf_wk1Application.java"
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/com/zacharygover/wk1/R.java"
+"/Users/Zachary/Documents/Full Sail/ADV/GIT/Gover_Zachary_AVF_WK1/build/android/gen/ti/modules/titanium/ui/R.java"
