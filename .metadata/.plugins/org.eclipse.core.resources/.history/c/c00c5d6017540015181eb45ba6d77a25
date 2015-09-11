@@ -1,9 +1,0 @@
-// Define all design elements to be displayed within the application
-
-var mainWin = Ti.UI.createWindow {
-	
-};
-
-var update = function() {
-	
-};

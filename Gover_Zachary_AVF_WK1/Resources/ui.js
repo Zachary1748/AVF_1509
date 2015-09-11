@@ -12,6 +12,8 @@ if (!Ti.Platform.osname === "android") {
 		height: 20, left: 0, right: 0, top: 0,
 		backgroundColor: "#ededed"
 	});
+	
+	mainWin.add(statusBar);
 }
 
 var alertView = Ti.UI.createView ({
@@ -24,7 +26,7 @@ var alertText = Ti.UI.createLabel ({
 alertView.add(alertText);
 
 var tempView = Ti.UI.createView ({
-	left: 0, right: 0,
+	left: 0, right: 0, height: "50%",
 	backgroundColor: "#ffffff",
 	layout: "vertical"
 });
@@ -41,6 +43,13 @@ var wthrImg = Ti.UI.createImageView ({
 });
 tempView.add(wthrImg);
 
+var weatherStatus = Ti.UI.createLabel ({
+	text: "?",
+	color: "#A6A6A6", top: 0,
+	font: {fontFamily: fntFmly, fontSize: 14}
+});
+tempView.add(weatherStatus);
+
 var tempText = Ti.UI.createLabel ({
 	text: "?",
 	top: 10,
@@ -52,18 +61,31 @@ tempView.add(tempText);
 var locationText = Ti.UI.createLabel ({
 	text: "?, ?",
 	top: 5, color: "#5c5c5c",
-	font: {fontSize: 16, fontFamily: fntFmly}
+	font: {fontSize: 16, fontFamily: fntFmly},
+	textAlign: "center"
 });
 tempView.add(locationText);
+
+var threeDayForecast = Ti.UI.createView({
+	left: 0, top: 0,
+	backgroundColor: "#FFFFFF"
+});
+
+var oneDayLabel = Ti.UI.createLabel ({
+	text: "????????", bottom: 0,
+	font: { fontSize: 18, fontFamily: fntFmly }
+});
+threeDayForecast.add(oneDayLabel);
 
 var alerts = require("alerts");
 
 var updateView = function(response) {
 	wthrImg.image = response.wthrImg;
+	weatherStatus.text = response.wthr;
 	tempText.text = response.temp + "°";
-	locationText.text = response.city + ", " + response.state;
+	locationText.text = response.city + ", " + response.state + "\n" + response.zip + ", " + response.ctry;
 	console.log(response.city + ", " + response.state);
-	if (response.desc == "" || response.desc == "\"<null>\"" || response.desc == null) {
+	if (response.desc == null) {
 		alertView.height = 0;
 	} else {
 		alertText.text = response.desc;
@@ -89,13 +111,12 @@ refreshImg.addEventListener('click', function(){
 	}
 });
 
-if (!Ti.Platform.osname === "android") {
-	mainWin.add(statusBar);
-}
 if (Ti.Platform.osname === "android") {
 	alertView.top = 0;
 }
+
 mainWin.add(alertView);
 mainWin.add(tempView);
+mainWin.add(threeDayForecast);
 mainWin.open();
 exports.updateView = updateView;
