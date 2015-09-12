@@ -10,8 +10,8 @@ var getGeo = function() {
 		Ti.Geolocation.getCurrentPosition(function(e) {
 			if (!e.success || e.error) {
 				console.log(e.error);
-				alert("Sorry there was an error getting your current location.");
-				dbFile.read();
+				alert("Sorry, you must allow location services for us to obtain the current weather information.");
+				// dbFile.read();
 			} else {
 				var lat = e.coords.latitude;
 				var lng = e.coords.longitude;
@@ -45,7 +45,36 @@ var apiConnection = function (lat, lng) {
 				"desc"		: alertDesc,
 				"msg"		: alertMsg
 			};
-			dbFile.save(response);
+			
+			var hourlyResponse = {
+				// Hour One
+				"hourOneImage" : json.hourly_forecast[1].icon_url,
+				"hourOneText" : json.hourly_forecast[1].FCTTIME.civil + " " + json.hourly_forecast[1].temp.english + "°",
+				// Hour Two
+				"hourTwoImage" : json.hourly_forecast[2].icon_url,
+				"hourTwoText" : json.hourly_forecast[2].FCTTIME.civil + " " + json.hourly_forecast[2].temp.english + "°",
+				// Hour Three
+				"hourThreeImage" : json.hourly_forecast[3].icon_url,
+				"hourThreeText" : json.hourly_forecast[3].FCTTIME.civil + " " + json.hourly_forecast[3].temp.english + "°",
+				// Hour Four
+				"hourFourImage" : json.hourly_forecast[4].icon_url,
+				"hourFourText" : json.hourly_forecast[4].FCTTIME.civil + " " + json.hourly_forecast[4].temp.english + "°",
+			};
+			
+			var dailyResponse = {
+				// Day One
+				"dayOneImage" : json.forecast.simpleforecast.forecastday[0].icon_url,
+				"dayOneText" : json.forecast.simpleforecast.forecastday[0].date.weekday_short + " " + json.forecast.simpleforecast.forecastday[0].high.fahrenheit + "°" + "/" + json.forecast.simpleforecast.forecastday[0].low.fahrenheit + "°",
+				// Day Two
+				"dayTwoImage" : json.forecast.simpleforecast.forecastday[1].icon_url,
+				"dayTwoText" : json.forecast.simpleforecast.forecastday[1].date.weekday_short + " " + json.forecast.simpleforecast.forecastday[1].high.fahrenheit + "°" + "/" + json.forecast.simpleforecast.forecastday[1].low.fahrenheit + "°",
+				// Day Three
+				"dayThreeImage" : json.forecast.simpleforecast.forecastday[2].icon_url,
+				"dayThreeText" : json.forecast.simpleforecast.forecastday[2].date.weekday_short + " " + json.forecast.simpleforecast.forecastday[2].high.fahrenheit + "°" + "/" + json.forecast.simpleforecast.forecastday[2].low.fahrenheit + "°",
+			};
+			
+			console.log(dailyResponse);
+			dbFile.save(response, hourlyResponse, dailyResponse);
 			dbFile.read();
 		},
 		onerror : function(e) {
