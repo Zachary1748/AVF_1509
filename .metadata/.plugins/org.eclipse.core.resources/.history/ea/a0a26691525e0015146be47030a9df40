@@ -1,0 +1,21 @@
+// Image View
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var galleryList = gallery.getDirectoryListing();
+var rowCount = 4;
+var margin = 5;
+var size = (pWidth - (margin * (rowCount+1))) / rowCount;
+var globalOrientation = [
+	Ti.UI.PORTRAIT,
+	Ti.UI.LANDSCAPE_LEFT,
+	Ti.UI.LANDSCAPE_RIGHT
+];
+
+var viewContainer = Ti.UI.createScrollView ({
+	width: pWidth,
+	height: pHeight-70,
+	contentWidth: pWidth,
+	layout: "horizontal",
+	showVerticalIndicator: true
+});

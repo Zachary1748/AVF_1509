@@ -1,9 +1,0 @@
-// Check to see if the network is online
-if (Ti.Network.online) {
-	// Connect to the API and send results to the Ui and DB
-	Ti.API.info("Online");
-	var data = require("db");
-	data.getGeo();
-} else {
-	// Connect to the DB if the user has been opened the application before with internet
-}

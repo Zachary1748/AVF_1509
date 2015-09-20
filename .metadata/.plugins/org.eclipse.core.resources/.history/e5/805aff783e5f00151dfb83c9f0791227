@@ -1,0 +1,26 @@
+// View full image
+var globalOrientation = [
+	Ti.UI.PORTRAIT,
+	Ti.UI.LANDSCAPE_LEFT,
+	Ti.UI.LANDSCAPE_RIGHT
+];
+
+var imageFull = Ti.UI.createWindow({
+	backgroundColor: '333',
+	title: "Full Image",
+	orientationModes: globalOrientation
+});
+
+var showFullImage = function(data) {
+	var presentImage = Ti.UI.createImageView ({
+		image: data.fullImage,
+		left: 20,
+		right: 20
+	});
+	imageFull.add(presentImage);
+	var ui = require("ui");
+	ui.navWin.openWindow(imageFull, {animate:true});
+};
+
+exports.imageFull = imageFull;
+exports.showFullImage = showFullImage;

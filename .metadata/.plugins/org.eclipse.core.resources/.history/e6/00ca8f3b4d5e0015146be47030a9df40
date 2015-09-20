@@ -1,0 +1,9 @@
+if (Ti.Network.online) {
+	require('ui');
+} else {
+	alert("You're not connected to a network.");
+	var db = require('db');
+}
+
+// var f = wthrImg.toImage();
+// Ti.Media.saveToPhotoGallery(f);

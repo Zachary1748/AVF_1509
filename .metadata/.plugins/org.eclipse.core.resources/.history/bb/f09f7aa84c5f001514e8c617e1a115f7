@@ -1,0 +1,9 @@
+var navWindow = function(win) {
+	var navWin = Titanium.UI.iOS.createNavigationWindow({
+	   window: win
+	});
+	
+	exports.navWin = navWin;
+};
+
+exports.navWindow = navWindow;

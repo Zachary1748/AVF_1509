@@ -1,0 +1,24 @@
+// API Connection
+
+var apiConnection = function (searchVal) {
+	// Connect to the pixabay api
+	Ti.API.info("apiConnection");
+	var url = "https://pixabay.com/api/?username=Zachary1748&key=552c904285618cf4cf20&q=" + encodeURIComponent(searchVal) + "&image_type=photo";
+	var xhrRequest = Ti.Network.createHTTPClient ({
+		onload : function(e) {
+			var json = JSON.parse(this.responseText);
+			
+			console.log(json);
+		},
+		onerror : function(e) {
+			console.log(e);
+			alert("There was an error while retreiving the weather data.");
+		},
+		timeout : 5000
+	});
+	
+	xhrRequest.open("GET", url);
+	xhrRequest.send();
+};
+
+exports.apiConnection = apiConnection;

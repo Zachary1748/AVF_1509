@@ -1,0 +1,43 @@
+// Search View
+var mainWin = Ti.UI.createWindow ({
+	title: "Project 3",
+	backgroundColor: "#F0F0F0",
+	layout: "vertical"
+});
+
+var mainView = Ti.UI.createScrollView ({
+	top: 20, right: 0, bottom: 0, left: 0,
+	layout: "vertical",
+	contentHeight: "100%", contentWidth: "100%"
+});
+
+var searchLabel = Ti.UI.createLabel ({
+	text: "Search Images", top: "30%",
+	font: { fontSize: "20%", fontFamily: "Arial" }
+});
+mainView.add(searchLabel);
+
+var searchField = Ti.UI.createTextField ({
+	left: 20, right: 20, top: 5, height: 40,
+	borderColor: "#EDEDED", backgroundColor: "#FFFFFF", borderRadius: 3,
+	hintText: "Jeff Dunham",
+	paddingLeft: 10, paddingRight: 10
+});
+mainView.add(searchField);
+
+var searchBtn = Ti.UI.createView({
+	top: 5, left: 20, right: 20, height: 40,
+	borderColor: "#EDEDED", borderRadius: 3, backgroundColor: "#333333"
+});
+
+var searchTxt = Ti.UI.createLabel ({
+	text: "Search",
+	color: "#FFFFFF",
+	top: 8, 
+	font: { fontSize: 18, fontFamily: "Arial" }
+});
+searchBtn.add(searchTxt);
+mainView.add(searchBtn);
+
+mainWin.add(mainView);
+mainWin.open();

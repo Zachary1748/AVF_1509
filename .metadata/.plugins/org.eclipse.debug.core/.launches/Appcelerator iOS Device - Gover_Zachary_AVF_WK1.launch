@@ -16,6 +16,6 @@
 <listEntry value="4"/>
 </listAttribute>
 <stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
-<stringAttribute key="sdk_version" value="8.4"/>
+<stringAttribute key="sdk_version" value="9.0"/>
 <stringAttribute key="uuid" value="cc03c378-3f35-4670-8261-72b5dce48222"/>
 </launchConfiguration>

@@ -1,0 +1,25 @@
+// Search View
+var mainWin = Ti.UI.createWindow ({
+	title: "Project 3",
+	backgroundColor: "#F0F0F0",
+	layout: "vertical"
+});
+
+var mainView = Ti.UI.createView ({
+	top: 0, right: 0, bottom: 0, left: 0,
+	layout: "vertical"
+});
+
+var searchLabel = Ti.UI.createLabel ({
+	text: "Search Images",
+	font: { fontSize: "20%", fontFamily: "Arial" }
+});
+mainView.add(searchLabel);
+
+var searchField = Ti.UI.createTextField ({
+	left: 20, right: 20, top: 5,
+	borderColor: "#EDEDED", backgroundColor: "#FFFFFF", borderRadius: 3
+});
+
+mainWin.add(mainView);
+mainWin.open();

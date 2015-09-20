@@ -1,0 +1,16 @@
+// View full image
+var showImageFull = function(data) {
+	var imageFull = Ti.UI.createWindow({
+		backgroundColor: '333',
+		title: dataSource.title,
+		orientationModes: globalOrientation
+	});
+	
+	var presentImage = Ti.UI.createImageView ({
+		image: dataSource.fullImage,
+		left: 30,
+		right: 30
+	});
+	imageFull.add(presentImage);
+	navWin.openWindow(imageFull, {animate:true});
+};

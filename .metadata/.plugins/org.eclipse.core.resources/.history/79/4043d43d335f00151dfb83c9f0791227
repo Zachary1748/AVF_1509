@@ -1,0 +1,27 @@
+// Image View
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var rowCount = 4;
+var margin = 5;
+var size = (pWidth - (margin * (rowCount+1))) / rowCount;
+var globalOrientation = [
+	Ti.UI.PORTRAIT,
+	Ti.UI.LANDSCAPE_LEFT,
+	Ti.UI.LANDSCAPE_RIGHT
+];
+
+var imageWin = Ti.UI.createWindow ({
+	title: "Search Results",
+	backButtonTitle: "Back",
+	backgroundColor: "#333333"
+});
+
+var viewContainer = Ti.UI.createScrollView ({
+	width: pWidth,
+	height: pHeight-70,
+	contentWidth: pWidth,
+	layout: "horizontal",
+	showVerticalIndicator: true
+});
+
+exports.imageWin = imageWin;

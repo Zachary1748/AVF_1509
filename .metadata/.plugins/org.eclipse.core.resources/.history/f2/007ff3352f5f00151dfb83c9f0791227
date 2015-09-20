@@ -1,0 +1,20 @@
+// Database Connection (Read, Save)
+var read = function(){
+	
+};
+
+var save = function(response) {
+	// Save the new data that has been fetched into the the Database
+	var db = Ti.Database.open("weather_db");
+	db.execute("CREATE TABLE IF NOT EXISTS weather_data (id INTEGER PRIMARY KEY, preview TEXT, fullImage TEXT)");
+	db.execute("DELETE FROM weather_data");
+	for (i=0; i<response; i++) {
+		console.log(response[i].previewURL);
+		db.execute("INSERT INTO weather_data (preview, fullImage) VALUES (?, ?)", response[i].previewURL, response[i].wbformatURL);
+	}
+	db.close();
+	read();
+};
+
+exports.read = read;
+exports.save = save;

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Gover_Zachary_Project3/Resources/iv.js&apos; to &apos;imageView.js&apos;" description="Rename resource &apos;iv.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/iv.js" name="imageView.js" stamp="1442614519049" updateReferences="true"/>
+</session>

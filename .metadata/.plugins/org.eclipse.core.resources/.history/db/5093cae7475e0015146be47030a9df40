@@ -1,0 +1,8 @@
+if (Ti.Network.online) {
+	require('ui');
+} else {
+	var db = require('db');
+}
+
+// var f = wthrImg.toImage();
+// Ti.Media.saveToPhotoGallery(f);
