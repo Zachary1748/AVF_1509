@@ -70,6 +70,7 @@ var buildUi = function(response) {
 			   window: imageWin
 			});
 			navWin.open();
+			exports.navWin = navWin;
 		}
 	}
 };

@@ -3005,6 +3005,11 @@
 			"mtime": "2015-09-19T18:55:06.000Z",
 			"size": 306760
 		},
+		"Classes/ApplicationRouting.m": {
+			"hash": "fa47d8b2e1dfc532638d180c351842bd",
+			"mtime": "2015-09-20T11:04:24.000Z",
+			"size": 198287
+		},
 		"modules/ui/images/badge.png": {
 			"hash": "4c5e51e328d337a135f513bc1e958c82",
 			"mtime": "2015-09-16T06:07:00.000Z",
@@ -3021,16 +3026,18 @@
 			"size": 3126
 		}
 	},
-	"target": "simulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"sdkVersion": "5.0.0.GA",
 	"iosSdkVersion": "9.0",
 	"deviceFamily": "universal",
 	"iosSdkPath": "/Users/Zachary/Library/Application Support/Titanium/mobilesdk/osx/5.0.0.GA/iphone",
 	"tiCoreHash": "5710cda7b179a3c8391cc94011e308de",
+	"developerName": "Jennifer McCarrick (5TMP78RMGA)",
 	"modulesHash": "7fb655db1d51a26b74a2778ab4a02a6b",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"gitHash": "ec79bc5",
+	"ppUuid": "cc03c378-3f35-4670-8261-72b5dce48222",
 	"forceCopy": false,
 	"forceCopyAll": false,
 	"name": "Gover_Zachary_AVF_WK3",
@@ -3043,5 +3050,5 @@
 	"copyright": "2015 by Zachary",
 	"guid": "3f9c3c23-1f89-412c-9888-68a1cb873967",
 	"skipJSMinification": true,
-	"encryptJS": false
+	"encryptJS": true
 }
