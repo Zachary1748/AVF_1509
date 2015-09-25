@@ -24001,3 +24001,15 @@ Caused by: java.io.IOException: error=7, Argument list too long
 
 !ENTRY com.appcelerator.titanium.core 4 0 2015-09-20 05:53:02.581
 !MESSAGE (Build 4.3.0.201509151348) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-24 19:51:33.810
+!MESSAGE (Build 4.3.0.201509151348) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/mobilesdk/osx
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-24 19:51:33.810
+!MESSAGE (Build 4.3.0.201509151348) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-24 19:53:26.223
+!MESSAGE (Build 4.3.0.201509151348) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/mobilesdk/osx
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-09-24 19:53:26.223
+!MESSAGE (Build 4.3.0.201509151348) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
